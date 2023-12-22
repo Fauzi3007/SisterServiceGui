@@ -1,3 +1,3 @@
 # Sister Service Gui
 
-Aplikasi Flutter menggunakan API Java Spring 
+Aplikasi FLutter CRUD Mahasiswa, Matakuliah, dan Nilai menggunakan API Java Spring 
