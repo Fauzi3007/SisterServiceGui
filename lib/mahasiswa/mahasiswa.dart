@@ -53,8 +53,11 @@ class _DataMahasiswaState extends State<DataMahasiswa> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Data Mahasiswa"),
-        backgroundColor: const Color.fromARGB(255, 148, 98, 233),
+        title: Text(
+          "Data Mahasiswa",
+          style: TextStyle(color: Colors.white),
+        ),
+        backgroundColor: Colors.red,
         actions: [
           IconButton(
               onPressed: () {
@@ -67,6 +70,7 @@ class _DataMahasiswaState extends State<DataMahasiswa> {
               icon: Icon(
                 Icons.add,
                 size: 30,
+                color: Colors.white,
               ))
         ],
       ),

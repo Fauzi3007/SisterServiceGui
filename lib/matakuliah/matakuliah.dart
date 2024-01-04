@@ -51,8 +51,11 @@ class _DataMatakuliahState extends State<DataMatakuliah> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Data Matakuliah"),
-        backgroundColor: const Color.fromARGB(255, 148, 98, 233),
+        title: Text(
+          "Data Matakuliah",
+          style: TextStyle(color: Colors.white),
+        ),
+        backgroundColor: Colors.green,
         actions: [
           IconButton(
               onPressed: () {
@@ -67,6 +70,7 @@ class _DataMatakuliahState extends State<DataMatakuliah> {
               icon: Icon(
                 Icons.add,
                 size: 30,
+                color: Colors.white,
               ))
         ],
       ),

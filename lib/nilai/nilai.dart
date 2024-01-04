@@ -82,8 +82,11 @@ class _DataNilaiState extends State<DataNilai> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Data Nilai"),
-        backgroundColor: const Color.fromARGB(255, 148, 98, 233),
+        title: Text(
+          "Data Nilai",
+          style: TextStyle(color: Colors.white),
+        ),
+        backgroundColor: Colors.blue,
         actions: [
           IconButton(
               tooltip: "Tambah Data",
@@ -98,6 +101,7 @@ class _DataNilaiState extends State<DataNilai> {
               icon: Icon(
                 Icons.add,
                 size: 30,
+                color: Colors.white,
               ))
         ],
       ),

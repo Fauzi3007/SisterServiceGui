@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:sisterservicegui/home.dart';
 import 'package:sisterservicegui/mahasiswa/mahasiswa.dart';
 import 'package:sisterservicegui/matakuliah/matakuliah.dart';
 import 'package:sisterservicegui/nilai/nilai.dart';
@@ -36,6 +37,7 @@ class Navbar extends StatefulWidget {
 class _NavbarState extends State<Navbar> {
   int _currentIndex = 0;
   final List<Widget> _pages = [
+    Home(),
     DataMahasiswa(),
     DataMatakuliah(),
     DataNilai(),
@@ -53,6 +55,10 @@ class _NavbarState extends State<Navbar> {
           });
         },
         items: [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.home_filled),
+              label: 'Home',
+              backgroundColor: Colors.amber),
           BottomNavigationBarItem(
               icon: Icon(Icons.person),
               label: 'Mahasiswa',
